@@ -29,7 +29,7 @@ public String show(Model model) {
 	return "input";
 }
 
-@RequestMapping(path="/getInfo",method=RequestMethod.POST)
+@RequestMapping(path="/getInfo",method=RequestMethod.POST)   //here we used PostMapping where it is used to insert the data into the database.
 public String data(@RequestParam("email") String email,@RequestParam("uName") String uName,
 		@RequestParam("pass") String password,Model model) {
 	Admin admin=new Admin();
