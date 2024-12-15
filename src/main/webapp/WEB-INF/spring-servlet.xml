@@ -75,13 +75,5 @@
 		id="transactionManager">
 		<property name="sessionFactory" ref="factory"></property>
 	</bean>
-	<!-- <bean id="adminImp" class="com.DAO.AdminImp"> <property name="hibernateTemplate" 
-		ref="Template" /> </bean> <bean id="adminService" class="com.Service.AdminService"> 
-		<property name="adminImp" ref="adminImp" /> </bean> -->
-
-	<!-- for writing the data into the data-base we use transactionalManager -->
-
-	<!-- /WEB-INF/view/show.jsp controller takes care of inserting the view 
-		name -->
 
 </beans>
