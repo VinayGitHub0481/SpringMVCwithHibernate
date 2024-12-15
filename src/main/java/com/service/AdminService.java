@@ -10,7 +10,7 @@ import com.admin.Admin;
 @Service
 public class AdminService {
      @Autowired
-	private AdminImp adminImp;
+	private AdminImp adminImp;     //this is the DAO class which is autowired inside the service class.
 	public int s1(Admin ad) {
 		int i=this.adminImp.save(ad);
 		return i;
