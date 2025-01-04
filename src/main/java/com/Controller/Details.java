@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.admin.Admin;
 import com.service.AdminService;
 
-@Controller
+@Controller    
 public class Details {
-	@Autowired
+	@Autowired   // Injecting of AdminService class to the Details class.
 	private AdminService adminService;
 
 	@ModelAttribute
