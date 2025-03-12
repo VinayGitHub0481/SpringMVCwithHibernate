@@ -20,16 +20,16 @@ public class Details {
 	public void desc(Model model) {
 		model.addAttribute("Header","Registration page");
 		model.addAttribute("Desc","Knowledge is divine");
-		System.out.println("Attribute Data");
+		System.out.println("Model Attribute Data");
 	}
 	
 @RequestMapping("/input")
 public String show(Model model) {
-	System.out.println("Show..");
+	System.out.println("Shown");
 	return "input";
 }
 
-@RequestMapping(path="/getInfo",method=RequestMethod.POST)   //here we used PostMapping where it is used to insert the data into the database.
+@RequestMapping(path="/getInfo",method=RequestMethod.POST)   //here we used PostMapping where it is used to insert new data into the database.
 public String data(@RequestParam("email") String email,@RequestParam("uName") String uName,
 		@RequestParam("pass") String password,Model model) {
 	Admin admin=new Admin();
